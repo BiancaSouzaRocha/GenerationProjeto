@@ -12,10 +12,10 @@ public class Exercicio6 {
 		do {
 			System.out.print("Digite um valor: ");
 			x = n.nextInt(); 
-			q++;
 			
-			if (x%3 == 0) {
+			if ((x%3 == 0) && (x != 0)) {
 				t = t+x;
+				q++;
 				
 			}
 			
