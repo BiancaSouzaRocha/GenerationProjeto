@@ -12,7 +12,7 @@ public class Exercicio4 {
 		
 		
 		
-		while (totalDePessoas<150) {
+		while (totalDePessoas<1) {
 			
 			System.out.print ("Digite a sua idade: ");
 			idade = n.nextInt();
@@ -26,19 +26,19 @@ public class Exercicio4 {
 			if (humor==1) {
 				pessoasCalmas++;
 			}
-			else if ((sexo == 1) && (humor==2)) {
+			if ((sexo == 1) && (humor==2)) {
 				mulheresNervosas++;
 			}
-			else if ((sexo==2) && (humor==3)) {
+			if ((sexo==2) && (humor==3)) {
 				homensAgressivos++;	
 			}
-			else if ((sexo==3) && (humor==1)){
+			if ((sexo==3) && (humor==1)){
 				outrosCalmos++;
 			}	
-			else if ((humor==2) && (idade >= 40)) {
+			if ((humor==2) && (idade >= 40)) {
 				pessoasNervosasMais40++;
 			}
-			else if ((humor==1) && (idade <=18)) {
+			if ((humor==1) && (idade <=18)) {
 				pessoasCalmasMais18++;
 				
 			}
