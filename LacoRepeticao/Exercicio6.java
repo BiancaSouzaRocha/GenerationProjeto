@@ -7,22 +7,22 @@ public class Exercicio6 {
 	public static void main (String args []) {
 		
 		Scanner n= new Scanner (System.in);
-		int x, t=0, q=0; 
+		int valor, total=0, quantidade=0; 
 		
 		do {
 			System.out.print("Digite um valor: ");
-			x = n.nextInt(); 
+			valor = n.nextInt(); 
 			
-			if ((x%3 == 0) && (x != 0)) {
-				t = t+x;
-				q++;		
+			if ((valor%3 == 0) && (valor != 0)) {
+				total = total+valor;
+				quantidade++;		
 			}
 			
-		} while (x != 0);
+		} while (valor != 0);
 		 		
 		
 		n.close();
-		System.out.printf ("A média dos valores multiplos de três é %d", t/q);
+		System.out.printf ("A média dos valores multiplos de três é %d", total/quantidade);
 		
 		
 	}	
