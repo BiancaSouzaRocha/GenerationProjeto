@@ -7,11 +7,11 @@ public class Exercicio4 {
 	public static void main (String args []) {
 		
 		Scanner n = new Scanner (System.in);
-		int idade, sexo, x, t=0, pc=0, mn=0, ha=0, oc=0, p40=0, p18=0; 
+		int idade, sexo, x, t=0, a=0, b=0, c=0, d=0, e=0, f=0; 
 		
 		
 		
-		while (t<3) {
+		while (t<150) {
 			
 			System.out.print ("Digite a sua idade: ");
 			idade = n.nextInt();
@@ -20,36 +20,35 @@ public class Exercicio4 {
 			System.out.print("Digite se você é calmo (1), nervoso (2) ou  agressivo (3): "); 
 			x = n.nextInt();
 			t++;
-			n.close();
-			
+					
 			if (x==1) {
-				pc++;
+				a++;
 			}
 			else if ((sexo == 1) && (x==2)) {
-				mn++;
+				b++;
 			}
 			else if ((sexo==2) && (x==3)) {
-				ha++;	
+				c++;	
 			}
 			else if ((sexo==3) && (x==1)){
-				oc++;
+				d++;
 			}	
 			else if ((x==2) && (idade >= 40)) {
-				p40++;
+				e++;
 			}
 			else if ((x==1) && (idade <=18)) {
-				p18++;
+				f++;
 				
 			}
 		}
 		
-		
-			System.out.println(pc);
-			System.out.println(mn);
-			System.out.println(ha);
-			System.out.println(oc);
-			System.out.println(p40);
-			System.out.println(p18);
+		    n.close();
+			System.out.printf("Número de pessoas calmas: %d",a);
+			System.out.printf("\nNúmero de mulheres nervosas: %d",b);
+			System.out.printf("\nNúmero de homens agressivos: %d",c);
+			System.out.printf("\nNúmero de outros calmos: %d",d);
+			System.out.printf("\nNúmero de pessoas nervosas com mais de 40 anos: %d",e);
+			System.out.printf("\nNúmero de pessoas calmas com menos de 18 anos: %d",f);
 		
 		
 	}

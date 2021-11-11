@@ -21,10 +21,10 @@ public class Exercicio3 {
 				}
 			System.out.printf("Digite a sua idade: ");
 			idade = n.nextInt();
-			n.close();
+			
 		}
 			
-			
+			n.close();
 			System.out.printf("Total de pessoas com menos de 21 anos: %d ",total1); 
 			System.out.printf(" e o total de pessoas com mais de 50 anos: %d" ,total2);
 		

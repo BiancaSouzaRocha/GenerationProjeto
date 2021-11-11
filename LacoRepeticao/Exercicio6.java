@@ -15,8 +15,7 @@ public class Exercicio6 {
 			
 			if ((x%3 == 0) && (x != 0)) {
 				t = t+x;
-				q++;
-				
+				q++;		
 			}
 			
 		} while (x != 0);
