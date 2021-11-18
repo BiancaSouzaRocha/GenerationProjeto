@@ -16,6 +16,16 @@ public class Aviao {
 		this.Assento = Assento;
 	}
 
+	public void mostrar () {
+		
+		System.out.println("------- DADOS DA SUA VIAGEM ---------");
+		System.out.println("Companhia Aerea: " + this.getCompanhiaAerea());
+		System.out.println("Destino: " + this.getDestino());
+		System.out.println("Situação do voo: " + this.getSituacao());
+		System.out.println("Número da sua poltrona: " + this.getAssento());		
+		
+	}
+	
 
 	public String getCompanhiaAerea() {
 		return CompanhiaAerea;

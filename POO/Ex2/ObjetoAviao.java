@@ -4,14 +4,14 @@ public class ObjetoAviao {
 
 	public static void main(String[] args) {
 		
-		Aviao in = new Aviao ("Avianca", "Brasília", "Na pista para decolagem", 15); 
+		Aviao aviao1 = new Aviao ("Avianca", "Brasília", "Na pista para decolagem", 15); 
 		
 		
-		System.out.println("------- DADOS DA SUA VIAGEM ---------");
-		System.out.println("Companhia Aerea: " +in.getCompanhiaAerea());
-		System.out.println("Destino: " +in.getDestino());
-		System.out.println("Situação do voo: " + in.getSituacao());
-		System.out.println("Número da sua poltrona: " + in.getAssento());
+		aviao1.mostrar();
+		
+		Aviao aviao2 = new Aviao("Avianca", "São Paulo", "Voando pelos ares", 22);
+		
+		aviao2.mostrar();
 		
 		
 
