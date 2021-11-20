@@ -8,7 +8,7 @@ public class Preguica extends Animal {
 	
 	public void locomocao () {
 		System.out.println (this.getNome() + " está subindo na árvore!"); 
-		System.out.println ("-------------------------------");
+		System.out.println ("\t\t\t-------------------------------");
 	}
 
 
