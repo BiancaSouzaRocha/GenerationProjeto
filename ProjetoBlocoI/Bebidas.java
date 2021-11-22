@@ -1,4 +1,4 @@
-package Totem;
+package ProjetoBlocoI;
 
 public class Bebidas extends Alimentos {
 
